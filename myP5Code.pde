@@ -32,6 +32,18 @@ draw = function(){
   ellipse(rightX, 100, 126, 97);
   ellipse(rightX+62, 100, 70, 60);
   ellipse(rightX-62, 100, 70, 60);
+
+  leftX += 1;
+  rightX -= 1;
+
+  if(leftX > 250){
+leftX -= 1;
+  }
+
+  if(rightX < 150){
+rightX += 1;
+  }
+
   
 }
 
